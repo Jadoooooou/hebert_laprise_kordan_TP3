@@ -17,3 +17,11 @@ Exemples de pièges et de mécanismes:
 
 <img width="1792" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />
 
+## Moodboard sonore
+### Ambience sonore
+
+### Effets sonores
+
+## Carte environnementale
+
+## Schema intéractivité

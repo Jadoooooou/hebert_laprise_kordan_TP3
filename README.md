@@ -20,8 +20,19 @@ Exemples de pièges et de mécanismes:
 ## Moodboard sonore
 ### Ambience sonore
 
+♫
+♫
+♫
+
 ### Effets sonores
+
+♫
+♫
+♫
 
 ## Carte environnementale
 
 ## Schema intéractivité
+### Tutoriel
+
+### Jeu

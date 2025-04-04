@@ -12,3 +12,8 @@ Exemples de pièges et de mécanismes:
 * Le joueur devra déplacer des blocs de pierre qui bloqueront son chemin ou pour agir en tant que poids sur une balance.
 * Le joueur aura des leviers actionner afin de continuer sa progression.
 * Le joueur devra éviter les cratères sur le sol.
+
+## Moodboard visuel
+
+<img width="1792" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />
+

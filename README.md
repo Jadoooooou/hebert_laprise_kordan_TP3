@@ -1,4 +1,4 @@
-# Os'scape
+# OS'SCAPE
 
 Incarnez un squelette prisonnier d’un labyrinthe dangereux en réalité virtuelle, et échappez-vous en évitant pièges et obstacles à travers trois niveaux de difficulté croissante.
 

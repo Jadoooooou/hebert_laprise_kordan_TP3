@@ -4,9 +4,9 @@ Incarnez un squelette prisonnier d’un labyrinthe dangereux en réalité virtue
 
 ## Description spécifique
 
-Une expérience VR immersive où le joueur rentre dans la peau d'un squelette se retrouvant prisonnier dans un labyrinthe. Pour s'en sortir, il devra comprendre les différents mécanismes du jeu, ainsi qu'éviter des pièges mortels à travers trois niveaux. Chaque niveau propose un labirynthe unique, et le joueur devra récupérer un diamant bien caché pour pouvoir passer au suivant, et, finalement, pouvoir en sortir. La difficulté augmente graduellement au fil des niveaux : les pièges deviennent plus complexes, les mécanismes plus nombreux et le labyrinthe plus difficile à naviguer.
+Une expérience VR immersive où le joueur rentre dans la peau d'un squelette se retrouvant prisonnier dans un labyrinthe. Pour s'en sortir, il devra comprendre les différents mécanismes du jeu, ainsi qu'éviter des pièges mortels à travers trois niveaux. Chaque niveau propose un labyrinthe unique, et le joueur devra récupérer un diamant bien caché pour pouvoir passer au suivant, et, finalement, pouvoir en sortir. La difficulté augmente graduellement au fil des niveaux : les pièges deviennent plus complexes, les mécanismes plus nombreux et le labyrinthe plus difficile à naviguer.
 
-Durant la phase d’introduction, le joueur apprend les contrôles de base et les mécaniques essentielles qui lui permettront de progresser dans le jeu : comment interagir avec les objets, éviter les pièges et repécuper les objets requis pour passer à la prochaine étape.
+Durant la phase d’introduction, le joueur apprend les contrôles de base et les mécaniques essentielles qui lui permettront de progresser dans le jeu : comment interagir avec les objets, éviter les pièges et recupéper les objets requis pour passer à la prochaine étape.
 
 Exemples de pièges et de mécanismes:
 * Le joueur devra déplacer des blocs de pierre qui bloqueront son chemin ou pour agir en tant que poids sur une balance.
@@ -19,7 +19,7 @@ Exemples de pièges et de mécanismes:
 <img width="1792" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />
 
 ## Moodboard sonore
-### Ambience sonore
+### Ambiance sonore
 
 ♫
 ♫
@@ -39,7 +39,5 @@ Exemples de pièges et de mécanismes:
 
 <img src="medias/photos/Schema_interactivite.png" style="width:1000px;">
 
-
-### Tutoriel
 
 ### Jeu

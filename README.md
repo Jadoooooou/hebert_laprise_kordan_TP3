@@ -11,7 +11,7 @@ Durant la phase d’introduction, le joueur apprend les contrôles de base et le
 Exemples de pièges et de mécanismes:
 * Le joueur devra déplacer des blocs de pierre qui bloqueront son chemin ou pour agir en tant que poids sur une balance.
 * Le joueur aura des leviers à actionner afin de continuer sa progression.
-* Le joueur devra éviter les cratères sur le sol.
+* Le joueur devra éviter les trous sur le sol.
 
 ## Moodboard visuel
 

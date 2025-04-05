@@ -36,6 +36,9 @@ Exemples de pièges et de mécanismes:
 ![ChatGPT Image 3 avr  2025, 21_20_36](https://github.com/user-attachments/assets/d74a4dd0-c9b8-4544-bb2c-0f383f7eac9f)
 
 ## Schema intéractivité
+
+<img width="1792" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />
+
 ### Tutoriel
 
 ### Jeu

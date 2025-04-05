@@ -37,7 +37,8 @@ Exemples de pièges et de mécanismes:
 
 ## Schema intéractivité
 
-<img width="1792" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />
+<img src="medias/photos/Schema_interactivite.png" style="width:1000px;">
+
 
 ### Tutoriel
 

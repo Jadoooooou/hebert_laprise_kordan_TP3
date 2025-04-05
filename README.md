@@ -12,6 +12,7 @@ Exemples de pièges et de mécanismes:
 * Le joueur devra déplacer des blocs de pierre qui bloqueront son chemin ou pour agir en tant que poids sur une balance.
 * Le joueur aura des leviers à actionner afin de continuer sa progression.
 * Le joueur devra éviter les trous sur le sol.
+* Le joueur a trois vies au total et s'il les perd toutes, il devra recommencer du début peu importe sa progression actuelle.
 
 ## Moodboard visuel
 

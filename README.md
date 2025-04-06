@@ -17,6 +17,9 @@ Exemples de pièges et de mécanismes:
 > Inspiré du jeu Fireboy & Watergirl
 > <img width="50%" alt="Fireboy & Watergirl" src="https://github.com/user-attachments/assets/d750105b-bfb8-411c-898a-014c72b06a8b" />
 
+</br>
+</br>
+
 ## Moodboard visuel
 
 <img width="" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />

@@ -33,11 +33,8 @@ Exemples de pièges et de mécanismes:
 
 ## Carte environnementale
 <img src="medias/photos/Carte_environnementale.png" style="width:100%;">
+<img width="1158" alt="Carte_environnementale_3D" src="https://github.com/user-attachments/assets/84849083-58d5-4b26-b98a-5be5ff55d04f" />
 
-<div style="">
-  <img src="medias/photos/Carte_environnementale_3D.png" style="display: flex; width: 50%;">
-  <img src="medias/photos/Carte_environnementale_3D_2.png" style="display: flex; width: 50%;">
-</div>
 
 ## Schema intéractivité
 

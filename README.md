@@ -30,7 +30,8 @@ Exemples de pièges et de mécanismes:
 ### Ambiance sonore
 
 ♫ [Dungeon Sound Effect](https://pixabay.com/sound-effects/dungeon-sound-effect-240254/) </br>
-♫ Consignes / Menu </br>
+♫ [Consignes / Menu choix 1](https://pixabay.com/sound-effects/menu-53679/) </br>
+♫ [Consignes / Menu choix 2](https://pixabay.com/sound-effects/loop-menu-preview-109594/) </br>
 ♫ [Passage d'un autre niveau choix 1](https://pixabay.com/sound-effects/level-up-47165/) </br>
 ♫ [Passage d'un autre niveau choix 2](https://pixabay.com/sound-effects/level-passed-143039/) </br>
 ♫ [Passage d'un autre niveau choix 3](https://pixabay.com/sound-effects/game-level-complete-143022/) </br>

@@ -39,6 +39,3 @@ Exemples de pièges et de mécanismes:
 ## Schema intéractivité
 
 <img src="medias/photos/Schema_interactivite.png" style="width:1000px;">
-
-
-### Jeu

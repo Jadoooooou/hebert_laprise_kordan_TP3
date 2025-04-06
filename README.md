@@ -32,8 +32,8 @@ Exemples de pièges et de mécanismes:
 ♫
 
 ## Carte environnementale
-<img src="medias/photos/Carte_environnementale.png" style="width:1000px;">
-<div style="display: flex; gap: 10px;">
+<img src="medias/photos/Carte_environnementale.png" style="width:100%; display: block; margin-bottom: 20px;">
+<div style="display: flex;">
   <img src="medias/photos/Carte_environnementale_3D.png" style="width: 50%;">
   <img src="medias/photos/Carte_environnementale_3D_2.png" style="width: 50%;">
 </div>

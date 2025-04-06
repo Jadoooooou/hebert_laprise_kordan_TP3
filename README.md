@@ -21,8 +21,8 @@ Exemples de pièges et de mécanismes:
 ## Moodboard sonore
 ### Ambiance sonore
 
-♫ [Dungeon Sound Effect](https://pixabay.com/sound-effects/dungeon-sound-effect-240254/) </br>
-♫ <a href="https://example.com" style="color: #00b894; text-decoration: none;" target="_blank">My Custom Styled Link</a>
+♫ <a href="https://pixabay.com/sound-effects/dungeon-sound-effect-240254/" style="color: #00b894; text-decoration: none;" target="_blank">Dungeon Sound Effect</a> </br>
+♫ 
 ♫
 
 ### Effets sonores

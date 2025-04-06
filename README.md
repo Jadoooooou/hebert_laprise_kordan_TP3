@@ -32,6 +32,8 @@ Exemples de pièges et de mécanismes:
 ♫
 
 ## Carte environnementale
+![nn](https://github.com/user-attachments/assets/db55ffe7-59ca-4802-a937-f5d4d18663c0)
+![ChatGPT Image 3 avr  2025, 21_20_36 png2](https://github.com/user-attachments/assets/9f6a6baa-9b7e-455f-8d32-84bceae2aad3)
 
 ![ChatGPT Image 3 avr  2025, 21_20_36](https://github.com/user-attachments/assets/d74a4dd0-c9b8-4544-bb2c-0f383f7eac9f)
 

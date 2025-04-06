@@ -15,11 +15,11 @@ Exemples de pièges et de mécanismes:
 * Le joueur a trois vies au total et s'il les perd toutes, il devra recommencer du début peu importe sa progression actuelle.
 
 > Inspiré du jeu Fireboy & Watergirl
-> <img width="1147" alt="Fireboy & Watergirl" src="https://github.com/user-attachments/assets/d750105b-bfb8-411c-898a-014c72b06a8b" />
+> <img width="50%" alt="Fireboy & Watergirl" src="https://github.com/user-attachments/assets/d750105b-bfb8-411c-898a-014c72b06a8b" />
 
 ## Moodboard visuel
 
-<img width="50%" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />
+<img width="" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />
 
 ## Moodboard sonore
 ### Ambiance sonore

@@ -14,6 +14,9 @@ Exemples de pièges et de mécanismes:
 * Le joueur devra éviter les trous sur le sol.
 * Le joueur a trois vies au total et s'il les perd toutes, il devra recommencer du début peu importe sa progression actuelle.
 
+> Inspiré du jeu Fireboy & Watergirl
+> <img width="1158" alt="Fireboy & Watergirl" src="https://github.com/user-attachments/assets/aa5fc09b-bc9a-426e-bcb0-13388dd74482" />
+
 ## Moodboard visuel
 
 <img width="1792" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />

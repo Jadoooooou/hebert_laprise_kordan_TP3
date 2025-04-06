@@ -27,9 +27,9 @@ Exemples de pièges et de mécanismes:
 
 ### Effets sonores
 
-♫ [Récolte d'un diamant](https://pixabay.com/sound-effects/diamond-found-190255/)
-♫ [Saut](https://pixabay.com/sound-effects/toy-button-105724/))
-♫ [Levier](https://pixabay.com/sound-effects/wood-crack-1-105890/) pas sur de lui, genre la premiere partie, tell me if u find sm better
+♫ [Récolte d'un diamant](https://pixabay.com/sound-effects/diamond-found-190255/) </br>
+♫ [Saut](https://pixabay.com/sound-effects/toy-button-105724/) </br>
+♫ [Levier](https://pixabay.com/sound-effects/wood-crack-1-105890/) pas sur de lui, genre la premiere partie, tell me if u find sm better </br>
 ♫ [Déplacement de la roche](https://pixabay.com/sound-effects/pushing-chair-96107/)
 
 ## Carte environnementale

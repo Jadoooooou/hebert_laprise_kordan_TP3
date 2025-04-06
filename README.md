@@ -44,7 +44,7 @@ Exemples de pièges et de mécanismes:
 
 ♫ [Récolte d'un diamant](https://pixabay.com/sound-effects/diamond-found-190255/) </br>
 ♫ [Saut](https://pixabay.com/sound-effects/toy-button-105724/) </br>
-♫ [Levier](https://pixabay.com/sound-effects/wood-crack-1-105890/) pas sur de lui, genre la premiere partie, tell me if u find sm better </br>
+♫ [Levier](https://www.youtube.com/watch?v=LwiOCsfa_ZA) </br>
 ♫ [Déplacement de la roche](https://pixabay.com/sound-effects/pushing-chair-96107/) </br>
 ♫ [Portail](https://pixabay.com/sound-effects/swoosh-fx-mediumwav-14619/) </br>
 

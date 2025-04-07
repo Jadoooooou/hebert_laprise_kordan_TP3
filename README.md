@@ -29,7 +29,7 @@ Exemples de pièges et de mécanismes:
 ## Moodboard sonore
 ### Ambiance sonore
 
-L'ambiance sonore s'adapte au thème du jeu, c'est-à-dire un univers de mystère, donc de la musique de dongeons. De plus, pour vraiment faire ressentir un sentiment d'immersion, il doit y avoir des effets de défaite et des effets de réussite lorsque le joueur progresse.
+L'ambiance sonore s'adapte au thème du jeu, c'est-à-dire un univers de mystère. De plus, pour vraiment faire ressentir un sentiment d'immersion, il doit y avoir des effets de défaite et des effets de réussite lorsque le joueur progresse.
 
 ♫ [Dungeon Sound Effect](https://pixabay.com/sound-effects/dungeon-sound-effect-240254/) </br>
 ♫ [Consignes / Menu choix 1](https://pixabay.com/sound-effects/menu-53679/) </br>

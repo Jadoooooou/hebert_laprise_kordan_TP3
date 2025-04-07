@@ -22,6 +22,8 @@ Exemples de pièges et de mécanismes:
 </br>
 </br>
 
+Comme dans notre inspiration, le deuxième joueur peut lui aussi interagir avec l'environnement. Le deuxième joueur peut choisir de venir en aide ou de nuire, en déplaçant ou activant les leviers. Le jeu peut aussi se jouer totalement en mode solo.
+
 ## Moodboard visuel
 
 <img width="" alt="Capture d’écran, le 2025-04-03 à 21 07 24" src="https://github.com/user-attachments/assets/b833354c-db72-4dcb-887d-09d08d9f3cc7" />

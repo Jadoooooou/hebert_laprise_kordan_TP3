@@ -55,6 +55,8 @@ L'ambiance sonore s'adapte au thème du jeu, c'est-à-dire un univers de mystèr
 
 ### Cette carte représente ce que chaque niveau requière minimalement, chaque niveau se compose d'interactions et de récoltes avec lesquels le personnage doit intéragir afin de réussir le niveau. La seule différence entre chacun des niveaux est la longueur de ces derniers ainsi que le nombre d'interactions (qui augmentent).
 
+### Exemple 3D d'un niveau
+
 <img width="1158" alt="Carte_environnementale_3D" src="https://github.com/user-attachments/assets/84849083-58d5-4b26-b98a-5be5ff55d04f" />
 
 ## Schema intéractivité

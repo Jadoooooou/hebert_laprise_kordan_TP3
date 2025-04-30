@@ -31,6 +31,22 @@ using UnityEngine;
 
         }
     }
+
+    void TraiterMessageOSC(OSCMessage oscMessage)
+    {
+        float value;
+        if (oscMessage.Values[0].Type == OSCValueType.Int)
+        {       
+            value = oscMessage.Values[0].IntValue;     
+        }        else if (oscMessage.Values[0].Type == OSCValueType.Float)        
+        {  
+            value = oscMessage.Values[0].FloatValue;    
+        }       
+        else  
+        {  
+            return;  
+        } 
+    }
     private void Start()
     {
         oscReceiver.Bind("*", TraiterMessageOSC);

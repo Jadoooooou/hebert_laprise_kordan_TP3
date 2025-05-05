@@ -3,15 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class script_jeu : MonoBehaviour
+public class Script_jeu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    public void jouer()
+    public void Jouer()
     {
         SceneManager.LoadScene("Niveau1");
     }

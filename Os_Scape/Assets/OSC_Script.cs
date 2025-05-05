@@ -10,9 +10,10 @@ using UnityEngine;
         public OSCTransmitter oscTransmitter;
     private int maValeur;
     private float myChrono;
+        public float value;
 
 
-    private void LateUpdate()
+    private void LateUpdate1()
     {
         // Si 100 millisecondes se sont écoulées depuis le dernier envoi :
         if (Time.realtimeSinceStartup - myChrono >= 0.1f)
@@ -27,14 +28,12 @@ using UnityEngine;
 
             // Envoyer le message
             oscTransmitter.Send(myOscMessage);
-
-
         }
     }
 
-    void TraiterMessageOSC(OSCMessage oscMessage)
+    public void TraiterMessageOSC(OSCMessage oscMessage)
     {
-        float value;
+        Debug.Log(oscMessage);
         if (oscMessage.Values[0].Type == OSCValueType.Int)
         {       
             value = oscMessage.Values[0].IntValue;     
@@ -49,7 +48,7 @@ using UnityEngine;
     }
     private void Start()
     {
-        oscReceiver.Bind("*", TraiterMessageOSC);
+        oscReceiver.Bind("/slider", TraiterMessageOSC);
     }
 }
 

@@ -9,4 +9,10 @@ public class Script_jeu : MonoBehaviour
     {
         SceneManager.LoadScene("Niveau1");
     }
+
+    public void quitterPartie()
+    {
+        Application.Quit();
+    }
+
 }

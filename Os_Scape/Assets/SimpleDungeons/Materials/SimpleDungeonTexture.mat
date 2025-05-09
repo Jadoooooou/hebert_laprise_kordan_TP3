@@ -218,7 +218,7 @@ Material:
     - _Anisotropy: 0
     - _BlendMode: 0
     - _BumpScale: 1
-    - _COAT_IOR: 1.4
+    - _COAT_IOR: 1
     - _COAT_ROUGHNESS: 0
     - _COAT_THICKNESS: 5
     - _COAT_WEIGHT: 0
@@ -295,7 +295,7 @@ Material:
     - _SPECULAR_ANISOTROPY: 0
     - _SPECULAR_IOR: 1.52
     - _SPECULAR_ROTATION: 0
-    - _SPECULAR_ROUGHNESS: 1
+    - _SPECULAR_ROUGHNESS: 0
     - _SPECULAR_WEIGHT: 0
     - _Smoothness: 0
     - _SmoothnessRemapMax: 0.5

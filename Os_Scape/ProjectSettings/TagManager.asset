@@ -12,6 +12,8 @@ TagManager:
   - porteGauche
   - h1porteDroite
   - h1porteGauche
+  - portes
+  - lave
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - lave
   - 
   - 
   - 

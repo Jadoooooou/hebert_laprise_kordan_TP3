@@ -3441,7 +3441,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2988989597165783857, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 666113435}
   m_SourcePrefab: {fileID: 100100000, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
 --- !u!114 &233289257 stripped
 MonoBehaviour:
@@ -6231,7 +6234,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 156808, guid: eb22a10dfa9dba74cb8a347a40d13694, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 877469666}
   m_SourcePrefab: {fileID: 100100000, guid: eb22a10dfa9dba74cb8a347a40d13694, type: 3}
 --- !u!4 &465891074 stripped
 Transform:
@@ -7933,6 +7939,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649511007}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &666113433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2988989597165783857, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+  m_PrefabInstance: {fileID: 233289256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &666113435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666113433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8192f3b960e3bdb49b7ba45b61e6605a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAudioSource: {fileID: 0}
+  vies:
+  - {fileID: 1474239339}
+  - {fileID: 1683337290}
+  - {fileID: 1704913840}
+  decompteVies: 0
+  defaite: {fileID: 362315307}
 --- !u!1001 &670956866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10138,6 +10168,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.0000024, y: 4.9999995, z: 1.9031224}
   m_Center: {x: -2.5000012, y: 2.4999998, z: 0.9515612}
+--- !u!1 &877469663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 156808, guid: eb22a10dfa9dba74cb8a347a40d13694, type: 3}
+  m_PrefabInstance: {fileID: 465891073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &877469666
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877469663}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.000002, y: 0, z: 5}
+  m_Center: {x: 2.500001, y: 0, z: -2.5}
 --- !u!1001 &884912822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21632,14 +21688,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8192f3b960e3bdb49b7ba45b61e6605a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  porteGauche: {fileID: 0}
-  porteDroite: {fileID: 0}
   myAudioSource: {fileID: 0}
   vies:
   - {fileID: 1474239339}
   - {fileID: 1683337290}
   - {fileID: 1704913840}
   decompteVies: 0
+  defaite: {fileID: 362315307}
 --- !u!4 &2014753475
 Transform:
   m_ObjectHideFlags: 0

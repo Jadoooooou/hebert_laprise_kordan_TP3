@@ -5,13 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Script_jeu : MonoBehaviour
 {
-    public GameObject porteGauche;
-    public GameObject porteDroite;
-
     public AudioSource myAudioSource;
 
     public GameObject[] vies;
     public int decompteVies;
+
+    public GameObject defaite;
 
     public void jouer()
     {
@@ -27,30 +26,17 @@ public class Script_jeu : MonoBehaviour
         decompteVies = 3;
     }
 
-    void PerteVies(Collider other)
+
+    void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("???"))
+        if (other.CompareTag("lave"))
         {
             decompteVies -= 1;
             vies[decompteVies].SetActive(false);
         }
         if (decompteVies == 0)
         {
-            //recommencer niveau1
-        }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("h1porteGauche"))
-        {
-            porteGauche.SetActive(false);
-            porteDroite.SetActive(true);
-        }
-        else if (other.CompareTag("h1porteDroite"))
-        {
-            porteDroite.SetActive(false);
-            porteGauche.SetActive(true);
+            defaite.SetActive(true);
         }
     }
 

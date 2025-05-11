@@ -7,7 +7,11 @@ TagManager:
   - roche
   - diamant
   - torches
-  - portes
+  - handle1
+  - porteDroite
+  - porteGauche
+  - h1porteDroite
+  - h1porteGauche
   layers:
   - Default
   - TransparentFX

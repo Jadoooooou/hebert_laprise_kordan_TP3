@@ -21,6 +21,11 @@ public class Script_jeu : MonoBehaviour
         Application.Quit();
     }
 
+    public void menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     void Start()
     {
         decompteVies = 3;

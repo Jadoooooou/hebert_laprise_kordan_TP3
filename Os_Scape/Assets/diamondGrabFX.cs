@@ -1,38 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class diamondGrabFX : MonoBehaviour
 {
     public GameObject portail; 
 
-    private XRGrabInteractable grabInteractable;
-
-    private void Awake()
+    private void OnTriggerEnter(Collider diamant)
     {
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        Debug.Log("Something entered: ");
 
-        if (grabInteractable != null)
+        if (diamant.CompareTag("diamantCollect"))
         {
-            grabInteractable.selectEntered.AddListener(OnGrabbed);
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (grabInteractable != null)
-        {
-            grabInteractable.selectEntered.RemoveListener(OnGrabbed);
-        }
-    }
-
-    private void OnGrabbed(SelectEnterEventArgs args)
-    {
-        if (portail != null)
-        {
-            Debug.Log("WORK BITCH");
+            Debug.Log("Diamond detected!");
             portail.SetActive(true);
         }
     }
+
+    private void OnTriggerExit(Collider diamant)
+    {
+        if (diamant.CompareTag("diamantCollect"))
+        {
+            portail.SetActive(false);
+        }
+    }
+
 }

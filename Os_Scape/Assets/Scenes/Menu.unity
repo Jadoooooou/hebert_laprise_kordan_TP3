@@ -2218,9 +2218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8192f3b960e3bdb49b7ba45b61e6605a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  porteGauche: {fileID: 0}
-  porteDroite: {fileID: 0}
   myAudioSource: {fileID: 844461114}
+  vies: []
+  decompteVies: 0
+  defaite: {fileID: 0}
 --- !u!4 &360070998
 Transform:
   m_ObjectHideFlags: 0
@@ -10482,7 +10483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

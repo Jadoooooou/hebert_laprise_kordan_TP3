@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class script_interactions_nv2 : MonoBehaviour
+public class script_interactions_nv3 : MonoBehaviour
 {
     public HingeJoint hinge1;
     public HingeJoint hinge2;
     public HingeJoint hinge3;
     public HingeJoint hinge4;
     public HingeJoint hinge5;
-
     public GameObject porte1Gauche;
     public GameObject porte1Droite;
     void Start()

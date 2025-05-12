@@ -1754,7 +1754,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821c25da27a7512408bedf8ea8fa6b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hinge: {fileID: 1282677368}
+  hinge1: {fileID: 0}
+  hinge2: {fileID: 0}
+  hinge3: {fileID: 0}
+  hinge4: {fileID: 0}
+  hinge5: {fileID: 0}
   porte1Gauche: {fileID: 783150389}
   porte1Droite: {fileID: 1732009342}
 --- !u!4 &119033033
@@ -8935,7 +8939,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 141548, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
       propertyPath: m_Name
-      value: SD_Env_Door_02 (4)
+      value: porte3Droite
       objectReference: {fileID: 0}
     - target: {fileID: 454270, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15229,7 +15233,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 141548, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
       propertyPath: m_Name
-      value: SD_Env_Door_02 (2)
+      value: porte2
       objectReference: {fileID: 0}
     - target: {fileID: 454270, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15956,18 +15960,18 @@ Transform:
   - {fileID: 2035843586}
   - {fileID: 260056191}
   - {fileID: 1244652949}
+  - {fileID: 415588496}
+  - {fileID: 1104821267}
+  - {fileID: 1204793338}
+  - {fileID: 2068902840}
+  - {fileID: 792638533}
+  - {fileID: 1512520233}
   - {fileID: 1509137893}
   - {fileID: 1156201726}
   - {fileID: 501916997}
   - {fileID: 781740289}
   - {fileID: 1378481594}
   - {fileID: 1107524424}
-  - {fileID: 415588496}
-  - {fileID: 2068902840}
-  - {fileID: 1104821267}
-  - {fileID: 792638533}
-  - {fileID: 1512520233}
-  - {fileID: 1204793338}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1278928378
@@ -20029,7 +20033,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 141548, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
       propertyPath: m_Name
-      value: SD_Env_Door_02 (5)
+      value: porte4
       objectReference: {fileID: 0}
     - target: {fileID: 454270, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28056,7 +28060,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 141548, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
       propertyPath: m_Name
-      value: SD_Env_Door_02 (3)
+      value: porte3Gauche
       objectReference: {fileID: 0}
     - target: {fileID: 454270, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28516,7 +28520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8192f3b960e3bdb49b7ba45b61e6605a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAudioSource: {fileID: 0}
   vies:
   - {fileID: 0}
   - {fileID: 0}

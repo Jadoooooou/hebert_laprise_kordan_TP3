@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Script_jeu : MonoBehaviour
 {
-    public AudioSource myAudioSource;
 
     public GameObject[] vies;
     public int decompteVies;
@@ -44,15 +43,6 @@ public class Script_jeu : MonoBehaviour
             defaite.SetActive(true);
         }
     }
-
-    public void VolumeOn() 
-    {
-        myAudioSource.Play();
-    }
-
-    public void VolumeOff()
-    {
-        myAudioSource.Stop();
-    }
 }
+
 

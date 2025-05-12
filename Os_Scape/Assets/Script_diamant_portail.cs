@@ -4,7 +4,7 @@ using UnityEngine;
 public class DiamondPortalTrigger : MonoBehaviour
 {
     public GameObject diamond;               // Assign the diamond in Inspector
-    public float placementHeightThreshold = 0.5f;
+    public float placementHeightThreshold = 0.5f;  // Optional height threshold
 
     private bool messageDisplayed = false;
 
@@ -12,17 +12,21 @@ public class DiamondPortalTrigger : MonoBehaviour
     {
         if (!messageDisplayed && other.gameObject == diamond)
         {
-            // Ensure diamond is resting on or near the portal (optional height check)
-            if (diamond.transform.position.y > transform.position.y + placementHeightThreshold)
+            // Check if the diamond is in front of the portal on the Z-axis
+            if (diamond.transform.position.z > transform.position.z) // Positive Z = in front of portal
             {
-                Debug.Log("Diamond placed on portal — message triggered.");
-                messageDisplayed = true;
+                // Ensure the diamond is resting on or near the portal (optional height check)
+                if (diamond.transform.position.y > transform.position.y + placementHeightThreshold)
+                {
+                    Debug.Log("Diamond placed in front of portal — message triggered.");
+                    messageDisplayed = true;
 
-                // --- Scene change (commented out for now) ---
-                // StartCoroutine(LoadSceneWithDelay(1.0f)); // Uncomment to load scene
+                    // --- Scene change (commented out for now) ---
+                    // StartCoroutine(LoadSceneWithDelay(1.0f)); // Uncomment to load scene
 
-                // --- Optional: delay before message, if needed ---
-                // StartCoroutine(ShowMessageWithDelay(1.0f));
+                    // --- Optional: delay before message, if needed ---
+                    // StartCoroutine(ShowMessageWithDelay(1.0f));
+                }
             }
         }
     }
@@ -41,7 +45,7 @@ public class DiamondPortalTrigger : MonoBehaviour
     IEnumerator ShowMessageWithDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        Debug.Log("Diamond placed on portal — message triggered with delay.");
+        Debug.Log("Diamond placed in front of portal — message triggered with delay.");
     }
     */
 }

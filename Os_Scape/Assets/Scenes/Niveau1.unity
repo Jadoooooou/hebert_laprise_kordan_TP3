@@ -15327,7 +15327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 434388, guid: 1378514d79bd4bb4d98191df08121fb1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6
+      value: -5.39
       objectReference: {fileID: 0}
     - target: {fileID: 434388, guid: 1378514d79bd4bb4d98191df08121fb1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15364,6 +15364,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 167164, guid: 1378514d79bd4bb4d98191df08121fb1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1883968051}
+    - targetCorrespondingSourceObject: {fileID: 167164, guid: 1378514d79bd4bb4d98191df08121fb1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1883968052}
   m_SourcePrefab: {fileID: 100100000, guid: 1378514d79bd4bb4d98191df08121fb1, type: 3}
 --- !u!4 &1883968048 stripped
 Transform:
@@ -15384,6 +15387,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diamond: {fileID: 2085693542}
   placementHeightThreshold: 0.5
+--- !u!65 &1883968052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824537478}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.042689, y: 3.520779, z: 0.97215176}
+  m_Center: {x: 0, y: 1.7603894, z: 0.08087015}
 --- !u!1 &1903455271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
@@ -18380,6 +18404,7 @@ GameObject:
   - component: {fileID: 2123054642}
   - component: {fileID: 2123054644}
   - component: {fileID: 2123054643}
+  - component: {fileID: 2123054645}
   m_Layer: 5
   m_Name: Panel - vies
   m_TagString: Untagged
@@ -18447,6 +18472,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123054641}
   m_CullTransparentMesh: 1
+--- !u!65 &2123054645
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123054641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2125182005
 PrefabInstance:
   m_ObjectHideFlags: 0

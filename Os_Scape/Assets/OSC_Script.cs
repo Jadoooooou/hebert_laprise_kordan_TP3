@@ -3,52 +3,69 @@ using System.Collections.Generic;
 using extOSC;
 using UnityEngine;
 
+public class OSCScript : MonoBehaviour
+{
+    public OSCReceiver oscReceiver;
+    public OSCTransmitter oscTransmitter;
 
-    public class OSCScript : MonoBehaviour
-    {
-        public OSCReceiver oscReceiver;
-        public OSCTransmitter oscTransmitter;
-    private int maValeur;
+    public GameObject handleObject;           // GameObject with the HingeJoint
+    private HingeJoint hinge;
+
     private float myChrono;
-        public float value;
+    private int maValeur;
 
+    public float valueX;                      // OSC input
+    public float motorForce = 50f;
+    public float motorSpeedMultiplier = 100f;
 
-    private void LateUpdate1()
+    void Start()
     {
-        // Si 100 millisecondes se sont écoulées depuis le dernier envoi :
+        if (handleObject != null)
+        {
+            hinge = handleObject.GetComponent<HingeJoint>();
+            if (hinge == null)
+            {
+                Debug.LogError("HingeJoint not found on handleObject.");
+            }
+        }
+
+        oscReceiver.Bind("/slider_X", TraiterX);
+    }
+
+    void LateUpdate()
+    {
+        if (hinge != null)
+        {
+            JointMotor motor = hinge.motor;
+            motor.force = motorForce;
+            motor.targetVelocity = valueX * motorSpeedMultiplier;
+            hinge.motor = motor;
+            hinge.useMotor = true;
+
+            valueX = 0f; // Reset if you're using OSC events rather than continuous stream
+        }
+
+        // Send OSC response every 0.1s
         if (Time.realtimeSinceStartup - myChrono >= 0.1f)
         {
             myChrono = Time.realtimeSinceStartup;
 
-            // Créer le message
             var myOscMessage = new OSCMessage("/adresse");
-
-            // Ajouter une valeur au message, maValeur doit être remplacé par le int de votre jeu que vous souhaitez envoyer.
-            myOscMessage.AddValue(OSCValue.Int((int)maValeur)); // Le (int) entre parenthèses convertit le type.
-
-            // Envoyer le message
+            myOscMessage.AddValue(OSCValue.Int(maValeur));
             oscTransmitter.Send(myOscMessage);
         }
     }
 
-    public void TraiterMessageOSC(OSCMessage oscMessage)
+    public void TraiterX(OSCMessage oscMessage)
     {
-        Debug.Log(oscMessage);
-        if (oscMessage.Values[0].Type == OSCValueType.Int)
-        {       
-            value = oscMessage.Values[0].IntValue;     
-        }        else if (oscMessage.Values[0].Type == OSCValueType.Float)        
-        {  
-            value = oscMessage.Values[0].FloatValue;    
-        }       
-        else  
-        {  
-            return;  
-        } 
-    }
-    private void Start()
-    {
-        oscReceiver.Bind("/slider", TraiterMessageOSC);
+        if (oscMessage.Values.Count > 0)
+        {
+            if (oscMessage.Values[0].Type == OSCValueType.Float)
+                valueX = oscMessage.Values[0].FloatValue;
+            else if (oscMessage.Values[0].Type == OSCValueType.Int)
+                valueX = oscMessage.Values[0].IntValue;
+
+            Debug.Log($"Received X: {valueX}");
+        }
     }
 }
-

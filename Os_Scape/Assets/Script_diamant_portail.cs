@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class DiamondPortalTrigger : MonoBehaviour
 {
-    public GameObject diamond;               // Assign the diamond in Inspector
+    public GameObject diamond;
+    public GameObject FX;
     public float placementHeightThreshold = 0.5f;  // Optional height threshold
 
     private bool messageDisplayed = false;
@@ -19,6 +20,7 @@ public class DiamondPortalTrigger : MonoBehaviour
                 if (diamond.transform.position.y > transform.position.y + placementHeightThreshold)
                 {
                     Debug.Log("Diamond placed in front of portal — message triggered.");
+                    FX.SetActive(true);
                     messageDisplayed = true;
 
                     // --- Scene change (commented out for now) ---

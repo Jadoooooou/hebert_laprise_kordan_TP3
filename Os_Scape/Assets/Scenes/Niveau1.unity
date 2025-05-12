@@ -8882,7 +8882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1034478136
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15597,7 +15597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diamond: {fileID: 2085693542}
   FX: {fileID: 800055790}
-  Reussite: {fileID: 0}
+  Reussite: {fileID: 1034478135}
   delay: 5
   placementHeightThreshold: 0.5
 --- !u!65 &1883968052

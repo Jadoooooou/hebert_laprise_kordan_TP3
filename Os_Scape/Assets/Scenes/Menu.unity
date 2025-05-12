@@ -2218,7 +2218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8192f3b960e3bdb49b7ba45b61e6605a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAudioSource: {fileID: 844461114}
   vies: []
   decompteVies: 0
   defaite: {fileID: 0}
@@ -3643,6 +3642,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 374432202383284576, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 977112980093118977, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_LineLength
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024908010063967882, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_LineLength
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149998939404473362, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2988989597165783857, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_Name
       value: joueur
@@ -3695,6 +3710,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3317738515802550279, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317738515802550280, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317738515802550281, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317738515802550283, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3317738516338080893, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.25
@@ -3702,6 +3733,10 @@ PrefabInstance:
     - target: {fileID: 4169663687741285665, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107684532549145703, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8680074075491755925, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_Height

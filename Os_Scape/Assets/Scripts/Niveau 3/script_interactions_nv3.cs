@@ -9,8 +9,14 @@ public class script_interactions_nv3 : MonoBehaviour
     public HingeJoint hinge3;
     public HingeJoint hinge4;
     public HingeJoint hinge5;
+
     public GameObject porte1Gauche;
     public GameObject porte1Droite;
+    public GameObject porte2;
+    public GameObject porte3Gauche;
+    public GameObject porte3Droite;
+    public GameObject porte4;
+
     void Start()
     {
 
@@ -22,13 +28,19 @@ public class script_interactions_nv3 : MonoBehaviour
 
         if (angle < -30f)
         {
-            porte1Gauche.SetActive(false);
-            porte1Droite.SetActive(true);
+            porte1Droite.SetActive(false);
+            porte1Gauche.SetActive(true);
+
         }
         else if (angle > 30f)
         {
-            porte1Droite.SetActive(false);
-            porte1Gauche.SetActive(true);
+            porte1Gauche.SetActive(false);
+            porte1Droite.SetActive(true);
+            //BoxCollider colGauche = porte1Gauche.GetComponent<BoxCollider>();
+            //if (colGauche != null) colGauche.enabled = false;
+            //MeshRenderer rendGauche = porte1Gauche.GetComponent<MeshRenderer>();
+            //if (rendGauche != null) rendGauche.enabled = false;
+
         }
     }
 }

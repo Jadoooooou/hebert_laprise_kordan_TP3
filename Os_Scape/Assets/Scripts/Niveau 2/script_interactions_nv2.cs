@@ -5,13 +5,10 @@ using UnityEngine;
 public class script_interactions_nv2 : MonoBehaviour
 {
     public HingeJoint hinge1;
-    public HingeJoint hinge2;
-    public HingeJoint hinge3;
-    public HingeJoint hinge4;
-    public HingeJoint hinge5;
-
-    public GameObject porte1Gauche;
-    public GameObject porte1Droite;
+    //public HingeJoint hinge2;
+    //public plateform animator
+    public GameObject porteGauche;
+    public GameObject porteDroite;
     void Start()
     {
 
@@ -23,13 +20,24 @@ public class script_interactions_nv2 : MonoBehaviour
 
         if (angle < -30f)
         {
-            porte1Gauche.SetActive(false);
-            porte1Droite.SetActive(true);
+            porteGauche.SetActive(false);
+            porteDroite.SetActive(true);
         }
         else if (angle > 30f)
         {
-            porte1Droite.SetActive(false);
-            porte1Gauche.SetActive(true);
+            porteDroite.SetActive(false);
+            porteGauche.SetActive(true);
         }
+
+        /*float angle = hinge2.angle;
+
+        if (angle < -30f)
+        {
+            trigger anim plateform
+        }
+        else if (angle > 30f)
+        {
+            tigger stop plateform
+        }*/
     }
 }

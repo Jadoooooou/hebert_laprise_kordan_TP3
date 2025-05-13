@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StoneCollision3 : MonoBehaviour
+public class StoneCollision2 : MonoBehaviour
 {
     public GameObject crate1;
     public GameObject crate2;

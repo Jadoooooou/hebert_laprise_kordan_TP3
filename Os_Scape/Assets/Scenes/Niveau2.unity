@@ -1729,7 +1729,6 @@ GameObject:
   - component: {fileID: 178744101}
   - component: {fileID: 178744100}
   - component: {fileID: 178744099}
-  - component: {fileID: 178744102}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -1780,21 +1779,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &178744102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178744097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0390d6fb24c1664cacb9d645e4efec6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crate1: {fileID: 2021915800}
-  crate2: {fileID: 452988486}
-  door: {fileID: 709551577}
 --- !u!1 &185697647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,10 +2366,10 @@ PrefabInstance:
       addedObject: {fileID: 195889576}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 195889575}
+      addedObject: {fileID: 195889574}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 195889574}
+      addedObject: {fileID: 195889582}
   m_SourcePrefab: {fileID: 100100000, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
 --- !u!4 &195889572 stripped
 Transform:
@@ -2493,20 +2477,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &195889575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195889573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crate: {fileID: 0}
-  animPlatform: {fileID: 0}
 --- !u!65 &195889576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2528,6 +2498,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011926807, y: 0.009978839, z: 0.010768275}
   m_Center: {x: -0.00040191968, y: -0.000010580522, z: 0.000054090513}
+--- !u!114 &195889582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195889573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0390d6fb24c1664cacb9d645e4efec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crate1: {fileID: 2021915800}
+  crate2: {fileID: 452988486}
+  door: {fileID: 709551577}
 --- !u!1001 &215082466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3005,7 +2990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313839182879511122, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.97
+      value: 20.07
       objectReference: {fileID: 0}
     - target: {fileID: 3313839182879511122, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5748,10 +5733,10 @@ PrefabInstance:
       addedObject: {fileID: 447467767}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 447467766}
+      addedObject: {fileID: 447467765}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 447467765}
+      addedObject: {fileID: 447467773}
   m_SourcePrefab: {fileID: 100100000, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
 --- !u!4 &447467763 stripped
 Transform:
@@ -5859,20 +5844,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &447467766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447467764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crate: {fileID: 0}
-  animPlatform: {fileID: 0}
 --- !u!65 &447467767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5894,6 +5865,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011926807, y: 0.009978839, z: 0.010768275}
   m_Center: {x: -0.00040191968, y: -0.000010580522, z: 0.000054090513}
+--- !u!114 &447467773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447467764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0390d6fb24c1664cacb9d645e4efec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crate1: {fileID: 2021915800}
+  crate2: {fileID: 452988486}
+  door: {fileID: 709551577}
 --- !u!20 &447700013 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3317738516338080888, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
@@ -13929,10 +13915,10 @@ PrefabInstance:
       addedObject: {fileID: 1163928246}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1163928245}
+      addedObject: {fileID: 1163928244}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1163928244}
+      addedObject: {fileID: 1163928252}
   m_SourcePrefab: {fileID: 100100000, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
 --- !u!4 &1163928242 stripped
 Transform:
@@ -14040,20 +14026,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1163928245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163928243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crate: {fileID: 0}
-  animPlatform: {fileID: 0}
 --- !u!65 &1163928246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14075,6 +14047,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011926807, y: 0.009978839, z: 0.010768275}
   m_Center: {x: -0.00040191968, y: -0.000010580522, z: 0.000054090513}
+--- !u!114 &1163928252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163928243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0390d6fb24c1664cacb9d645e4efec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crate1: {fileID: 2021915800}
+  crate2: {fileID: 452988486}
+  door: {fileID: 709551577}
 --- !u!1 &1169682266
 GameObject:
   m_ObjectHideFlags: 0

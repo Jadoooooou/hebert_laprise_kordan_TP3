@@ -9,6 +9,7 @@ public class script_interactions_nv3 : MonoBehaviour
     public HingeJoint hinge3;
     public HingeJoint hinge4;
     public HingeJoint hinge5;
+    public HingeJoint hinge6;
 
     public GameObject porte1Gauche;
     public GameObject porte1Droite;
@@ -16,6 +17,9 @@ public class script_interactions_nv3 : MonoBehaviour
     public GameObject porte3Gauche;
     public GameObject porte3Droite;
     public GameObject porte4;
+
+    public GameObject porte02;
+    public GameObject porte03;
 
     void Start()
     {
@@ -130,6 +134,30 @@ public class script_interactions_nv3 : MonoBehaviour
             MeshRenderer rendDroite3 = porte3Gauche.GetComponent<MeshRenderer>();
             if (rendDroite3 != null) rendDroite3.enabled = true;
 
+        }
+
+        //cinquieme levier
+        float angle5 = hinge5.angle;  
+
+        if (angle5 < -30f)
+        {
+            porte02.SetActive(false);
+        }
+        else if (angle5 > 30f)
+        {
+            porte02.SetActive(false);
+        }
+
+        //sixieme levier
+        float angle6 = hinge6.angle;
+
+        if (angle6 < -30f)
+        {
+            porte03.SetActive(false);
+        }
+        else if (angle6 > 30f)
+        {
+            porte03.SetActive(false);
         }
     }
 }

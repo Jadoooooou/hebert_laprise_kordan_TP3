@@ -322,6 +322,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1398037253}
+    - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1398037254}
   m_SourcePrefab: {fileID: 100100000, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
 --- !u!1001 &17335958
 PrefabInstance:
@@ -3699,7 +3702,10 @@ PrefabInstance:
       addedObject: {fileID: 412356210}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 412356218}
+      addedObject: {fileID: 412356214}
+    - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 412356213}
   m_SourcePrefab: {fileID: 100100000, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
 --- !u!4 &412356208 stripped
 Transform:
@@ -3828,7 +3834,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011926807, y: 0.009978839, z: 0.010768275}
   m_Center: {x: -0.00040191968, y: -0.000010580522, z: 0.000054090513}
---- !u!114 &412356218
+--- !u!114 &412356213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3837,11 +3843,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 412356209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dba477c3525839428f381b6e08a9cb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crate2: {fileID: 1077419307}
-  animPlatform1: {fileID: 1381376473}
+  crate: {fileID: 1077419307}
+  animPlatform: {fileID: 1381376473}
+--- !u!114 &412356214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412356209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crate: {fileID: 720976564}
+  animPlatform: {fileID: 613071516}
 --- !u!1001 &440323828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6169,7 +6189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8192f3b960e3bdb49b7ba45b61e6605a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myAudioSource: {fileID: 0}
   vies:
   - {fileID: 311848711}
   - {fileID: 2010555658}
@@ -12183,6 +12202,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crate: {fileID: 720976564}
   animPlatform: {fileID: 613071516}
+--- !u!114 &1398037254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398037234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crate: {fileID: 1077419307}
+  animPlatform: {fileID: 1381376473}
 --- !u!1001 &1412185591
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2362,6 +2362,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 195889588}
+    - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 195889576}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
@@ -2513,6 +2516,20 @@ MonoBehaviour:
   crate1: {fileID: 2021915800}
   crate2: {fileID: 452988486}
   door: {fileID: 709551577}
+--- !u!114 &195889588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195889573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crate: {fileID: 1600678173}
+  animPlatform: {fileID: 0}
 --- !u!1001 &215082466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5729,6 +5746,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 447467779}
+    - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 447467767}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
@@ -5880,6 +5900,20 @@ MonoBehaviour:
   crate1: {fileID: 2021915800}
   crate2: {fileID: 452988486}
   door: {fileID: 709551577}
+--- !u!114 &447467779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447467764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crate: {fileID: 1600678173}
+  animPlatform: {fileID: 0}
 --- !u!20 &447700013 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3317738516338080888, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
@@ -7581,7 +7615,7 @@ Animator:
   m_GameObject: {fileID: 627884450}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f6da94729722fb443bbaa8ec0fa53958, type: 2}
+  m_Controller: {fileID: 9100000, guid: 742eb5aa45b14dd478b4ce2df3f5af16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8568,6 +8602,9 @@ PrefabInstance:
       addedObject: {fileID: 678375242}
     - targetCorrespondingSourceObject: {fileID: 122110, guid: 50f315b818ee102489edc51e8657621c, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 678375248}
+    - targetCorrespondingSourceObject: {fileID: 122110, guid: 50f315b818ee102489edc51e8657621c, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 678375244}
     - targetCorrespondingSourceObject: {fileID: 122110, guid: 50f315b818ee102489edc51e8657621c, type: 3}
       insertIndex: -1
@@ -8971,6 +9008,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &678375248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678375237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb8e2e26923b0147aae52eb30f566cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hinge: {fileID: 678375241}
+  animPlatform: {fileID: 1174895638}
 --- !u!1001 &693886088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9911,7 +9962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &772218152
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13911,6 +13962,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1163928258}
+    - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1163928246}
     - targetCorrespondingSourceObject: {fileID: 4813185135743604804, guid: 9f72e8feffb9040dbb40529e5e04b5a9, type: 3}
@@ -14062,6 +14116,20 @@ MonoBehaviour:
   crate1: {fileID: 2021915800}
   crate2: {fileID: 452988486}
   door: {fileID: 709551577}
+--- !u!114 &1163928258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163928243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crate: {fileID: 1600678173}
+  animPlatform: {fileID: 0}
 --- !u!1 &1169682266
 GameObject:
   m_ObjectHideFlags: 0
@@ -14316,7 +14384,7 @@ Animator:
   m_GameObject: {fileID: 1174895636}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f6da94729722fb443bbaa8ec0fa53958, type: 2}
+  m_Controller: {fileID: 9100000, guid: 22973958eec37694ca6dd90c3393a2a8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
 
 public class DiamondPortalTrigger : MonoBehaviour
@@ -30,6 +31,6 @@ public class DiamondPortalTrigger : MonoBehaviour
 
     {
         yield return new WaitForSeconds(delay);
-        Reussite.SetActive(true);
+        SceneManager.LoadScene("Niveau2");
     }
 }

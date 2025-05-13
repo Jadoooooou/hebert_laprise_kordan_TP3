@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class script_interactions : MonoBehaviour
+public class Script_levier_plateform : MonoBehaviour
 {
     public HingeJoint hinge;
     public GameObject porteGauche;

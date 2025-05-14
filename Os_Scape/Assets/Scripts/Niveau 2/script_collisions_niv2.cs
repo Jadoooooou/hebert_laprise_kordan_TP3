@@ -1,42 +1,49 @@
 using UnityEngine;
 
-public class StoneCollision2 : MonoBehaviour
+public class CratePuzzleManager : MonoBehaviour
 {
+    public GameObject[] stones;
     public GameObject crate1;
     public GameObject crate2;
     public GameObject door;
+    public float placementThreshold = 0.5f;
 
-    private bool stoneOnCrate1 = false;
-    private bool stoneOnCrate2 = false;
+    private bool crate1Occupied = false;
+    private bool crate2Occupied = false;
 
-    void OnCollisionEnter(Collision collision)
+    void Update()
     {
-        if (collision.gameObject == crate1)
+        crate1Occupied = false;
+        crate2Occupied = false;
+
+        foreach (GameObject stone in stones)
         {
-            if (transform.position.y > crate1.transform.position.y + 0.5f)
-            {
-                Debug.Log("Stone is on top of crate1!");
-                stoneOnCrate1 = true;
-                CheckCrates();
-            }
+            if (IsOnTop(stone, crate1)) crate1Occupied = true;
+            if (IsOnTop(stone, crate2)) crate2Occupied = true;
         }
-        else if (collision.gameObject == crate2)
+
+        // Open door if both crates are occupied
+        if (crate1Occupied && crate2Occupied)
         {
-            if (transform.position.y > crate2.transform.position.y + 0.5f)
-            {
-                Debug.Log("Stone is on top of crate2!");
-                stoneOnCrate2 = true;
-                CheckCrates();
-            }
+            Debug.Log("Both crates are occupied. Opening door.");
+            door.SetActive(false);
+        }
+        // Close door if either crate is not occupied
+        else if (!crate1Occupied || !crate2Occupied)
+        {
+            Debug.Log("One or both crates are not occupied. Closing door.");
+            door.SetActive(true);
         }
     }
 
-    void CheckCrates()
+    bool IsOnTop(GameObject stone, GameObject crate)
     {
-        if (stoneOnCrate1 && stoneOnCrate2)
-        {
-            Debug.Log("Both crates have stones! Door is deactivated.");
-            door.SetActive(false);
-        }
+        float verticalOffset = stone.transform.position.y - crate.transform.position.y;
+        float horizontalDistance = Vector3.Distance(
+            new Vector3(stone.transform.position.x, 0, stone.transform.position.z),
+            new Vector3(crate.transform.position.x, 0, crate.transform.position.z)
+        );
+
+        return verticalOffset > placementThreshold && horizontalDistance < 0.5f;
     }
 }

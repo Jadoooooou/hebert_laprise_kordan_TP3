@@ -8,15 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 2e689a29d54628042a669980c1cda22e
-  - enabled: 0
-    path: Assets/Scenes/Niveau2.unity
-    guid: f683d935ae76b1d4498db2c01c7ea696
-  - enabled: 0
-    path: Assets/Scenes/Niveau3.unity
-    guid: c58ed0a43b256814bae85fbe0072f695
   - enabled: 1
     path: Assets/Scenes/Niveau1.unity
     guid: b94a58580e75e7144b88331ffc925009
+  - enabled: 1
+    path: Assets/Scenes/Niveau2.unity
+    guid: f683d935ae76b1d4498db2c01c7ea696
+  - enabled: 1
+    path: Assets/Scenes/Niveau3.unity
+    guid: c58ed0a43b256814bae85fbe0072f695
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 94828144d7f35ec43b0fa1713cbd0061, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 71e69b55b50106b409e70f36fc5f9dcf, type: 2}

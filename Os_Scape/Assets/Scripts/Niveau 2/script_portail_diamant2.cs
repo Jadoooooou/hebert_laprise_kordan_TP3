@@ -7,7 +7,6 @@ public class DiamondPortalTrigger2 : MonoBehaviour
 {
     public GameObject diamond;
     public GameObject FX;
-    public GameObject Reussite;
     public float delay = 5f;
     public float placementHeightThreshold = 0.5f;
 
@@ -21,13 +20,13 @@ public class DiamondPortalTrigger2 : MonoBehaviour
                 if (diamond.transform.position.y > transform.position.y + placementHeightThreshold)
                 {
                     FX.SetActive(true);
-                    StartCoroutine(ShowPanelAfterDelay());
+                    StartCoroutine(NextLevel());
                 }
             }
         }
     }
 
-    IEnumerator ShowPanelAfterDelay()
+    IEnumerator NextLevel()
 
     {
         yield return new WaitForSeconds(delay);

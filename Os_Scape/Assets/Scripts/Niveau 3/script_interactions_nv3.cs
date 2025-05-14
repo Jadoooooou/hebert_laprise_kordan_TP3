@@ -4,160 +4,95 @@ using UnityEngine;
 
 public class script_interactions_nv3 : MonoBehaviour
 {
-    public HingeJoint hinge1;
-    public HingeJoint hinge2;
-    public HingeJoint hinge3;
-    public HingeJoint hinge4;
-    public HingeJoint hinge5;
-    public HingeJoint hinge6;
+    public HingeJoint hinge1, hinge2, hinge3, hinge4;
 
-    public GameObject porte1Gauche;
-    public GameObject porte1Droite;
+    public GameObject porte1Gauche, porte1Droite;
     public GameObject porte2;
-    public GameObject porte3Gauche;
-    public GameObject porte3Droite;
+    public GameObject porte3Gauche, porte3Droite;
     public GameObject porte4;
-
     public GameObject porte02;
     public GameObject porte03;
 
-    void Start()
-    {
+    public float angleThreshold = 10f; // slightly lower for sensitivity
 
-    }
+    private float closeTimer = 0f;
+    private bool shouldClosePorte1Droite = false;
 
     void Update()
     {
-        //premier levier
         float angle1 = hinge1.angle;
-        if (angle1 < -30f)
-        {
-            porte1Droite.SetActive(false);
-            porte1Gauche.SetActive(true);
-            BoxCollider colDroite1 = porte1Droite.GetComponent<BoxCollider>();
-            if (colDroite1 != null) colDroite1.enabled = false;
-            MeshRenderer rendDroite1 = porte1Droite.GetComponent<MeshRenderer>();
-            if (rendDroite1 != null) rendDroite1.enabled = false;
-
-        }
-        else if (angle1 > 30f)
-        {
-            porte1Gauche.SetActive(false);
-            porte1Droite.SetActive(true);
-            BoxCollider colGauche1 = porte1Gauche.GetComponent<BoxCollider>();
-            if (colGauche1 != null) colGauche1.enabled = false;
-            MeshRenderer rendGauche1 = porte1Gauche.GetComponent<MeshRenderer>();
-            if (rendGauche1 != null) rendGauche1.enabled = false;
-
-        }
-
-        //deuxieme levier
         float angle2 = hinge2.angle;
-        if (angle2 < -30f)
-        {
-            porte2.SetActive(false);
-            porte1Droite.SetActive(true);
-            BoxCollider colporte2 = porte2.GetComponent<BoxCollider>();
-            if (colporte2 != null) colporte2.enabled = false;
-            MeshRenderer rendporte2 = porte2.GetComponent<MeshRenderer>();
-            if (rendporte2 != null) rendporte2.enabled = false;
-            BoxCollider colDroite1 = porte1Droite.GetComponent<BoxCollider>();
-            if (colDroite1 != null) colDroite1.enabled = true;
-            MeshRenderer rendDroite1 = porte1Droite.GetComponent<MeshRenderer>();
-            if (rendDroite1 != null) rendDroite1.enabled = true;
-
-        }
-        else if (angle2 > 30f)
-        {
-            porte2.SetActive(true);
-            porte1Droite.SetActive(true);
-            BoxCollider colporte2 = porte2.GetComponent<BoxCollider>();
-            if (colporte2 != null) colporte2.enabled = true;
-            MeshRenderer rendporte2 = porte2.GetComponent<MeshRenderer>();
-            if (rendporte2 != null) rendporte2.enabled = true;
-            BoxCollider colDroite1 = porte1Droite.GetComponent<BoxCollider>();
-            if (colDroite1 != null) colDroite1.enabled = true;
-            MeshRenderer rendDroite1 = porte1Droite.GetComponent<MeshRenderer>();
-            if (rendDroite1 != null) rendDroite1.enabled = true;
-
-        }
-
-        //troisieme levier
         float angle3 = hinge3.angle;
+        float angle4 = hinge4.angle;
+
+        // --- Porte1: open porte1Droite if hinge1 and hinge2 are different
+        if (Mathf.Abs(angle1 - angle2) > angleThreshold)
+        {
+            SetDoorState(porte1Droite, true);
+            SetDoorState(porte1Gauche, false);
+            shouldClosePorte1Droite = false;
+            closeTimer = 0f;
+        }
+        else
+        {
+            if (!shouldClosePorte1Droite)
+            {
+                shouldClosePorte1Droite = true;
+                closeTimer = Time.time + 1.5f;
+            }
+
+            if (shouldClosePorte1Droite && Time.time > closeTimer)
+            {
+                SetDoorState(porte1Droite, false);
+                SetDoorState(porte1Gauche, true);
+            }
+        }
+
+        // --- Porte2
+        if (angle2 > 30f)
+            SetDoorState(porte2, true);
+        else if (angle2 < -30f)
+            SetDoorState(porte2, false);
+
+        // --- Porte3
         if (angle3 < -30f)
         {
-            porte3Droite.SetActive(false);
-            porte3Gauche.SetActive(true);
-            BoxCollider colDroite3 = porte3Droite.GetComponent<BoxCollider>();
-            if (colDroite3 != null) colDroite3.enabled = false;
-            MeshRenderer rendDroite3 = porte3Droite.GetComponent<MeshRenderer>();
-            if (rendDroite3 != null) rendDroite3.enabled = false;
-
+            SetDoorState(porte3Gauche, true);
+            SetDoorState(porte3Droite, false);
         }
         else if (angle3 > 30f)
         {
-            porte3Gauche.SetActive(false);
-            porte3Droite.SetActive(true);
-            BoxCollider colGauche3 = porte3Gauche.GetComponent<BoxCollider>();
-            if (colGauche3 != null) colGauche3.enabled = false;
-            MeshRenderer rendGauche3 = porte3Gauche.GetComponent<MeshRenderer>();
-            if (rendGauche3 != null) rendGauche3.enabled = false;
-
+            SetDoorState(porte3Gauche, false);
+            SetDoorState(porte3Droite, true);
         }
 
-        //quatrieme levier
-        float angle4 = hinge4.angle;
-        if (angle4 < -30f)
+        // --- Porte4: hinge3 vs hinge4 logic
+        float diff34 = Mathf.Abs(angle3 - angle4);
+        if (diff34 > angleThreshold)
         {
-            porte4.SetActive(false);
-            porte3Gauche.SetActive(true);
-            BoxCollider colporte4 = porte4.GetComponent<BoxCollider>();
-            if (colporte4 != null) colporte4.enabled = false;
-            MeshRenderer rendporte4 = porte4.GetComponent<MeshRenderer>();
-            if (rendporte4 != null) rendporte4.enabled = false;
-            BoxCollider colDroite3 = porte3Gauche.GetComponent<BoxCollider>();
-            if (colDroite3 != null) colDroite3.enabled = true;
-            MeshRenderer rendDroite3 = porte3Gauche.GetComponent<MeshRenderer>();
-            if (rendDroite3 != null) rendDroite3.enabled = true;
-
+            Debug.Log($"[Porte4] OPEN — angle3: {angle3}, angle4: {angle4}, diff: {diff34}");
+            SetDoorState(porte4, true);
         }
-        else if (angle4 > 30f)
+        else
         {
-            porte4.SetActive(true);
-            porte3Gauche.SetActive(true);
-            BoxCollider colporte4 = porte4.GetComponent<BoxCollider>();
-            if (colporte4 != null) colporte4.enabled = true;
-            MeshRenderer rendporte4 = porte4.GetComponent<MeshRenderer>();
-            if (rendporte4 != null) rendporte4.enabled = true;
-            BoxCollider colDroite3 = porte3Gauche.GetComponent<BoxCollider>();
-            if (colDroite3 != null) colDroite3.enabled = true;
-            MeshRenderer rendDroite3 = porte3Gauche.GetComponent<MeshRenderer>();
-            if (rendDroite3 != null) rendDroite3.enabled = true;
-
+            Debug.Log($"[Porte4] CLOSED — angle3: {angle3}, angle4: {angle4}, diff: {diff34}");
+            SetDoorState(porte4, false);
         }
+    }
 
-        //cinquieme levier
-        float angle5 = hinge5.angle;  
+    void SetDoorState(GameObject door, bool state)
+    {
+        if (door == null) return;
 
-        if (angle5 < -30f)
-        {
-            porte02.SetActive(false);
-        }
-        else if (angle5 > 30f)
-        {
-            porte02.SetActive(false);
-        }
+        if (door.activeSelf != state)
+            door.SetActive(state);
 
-        //sixieme levier
-        float angle6 = hinge6.angle;
+        var col = door.GetComponent<BoxCollider>();
+        if (col != null && col.enabled != state)
+            col.enabled = state;
 
-        if (angle6 < -30f)
-        {
-            porte03.SetActive(false);
-        }
-        else if (angle6 > 30f)
-        {
-            porte03.SetActive(false);
-        }
+        var rend = door.GetComponent<MeshRenderer>();
+        if (rend != null && rend.enabled != state)
+            rend.enabled = state;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using extOSC;
 using UnityEngine;
 
-public class OSCScript : MonoBehaviour
+public class OSCScript_levier : MonoBehaviour
 {
     public OSCReceiver oscReceiver;
     public OSCTransmitter oscTransmitter;
@@ -13,7 +13,6 @@ public class OSCScript : MonoBehaviour
 
     private float myChrono;
     private int maValeur;
-
     public float valueX;                      // OSC input
     public float motorForce = 50f;
     public float motorSpeedMultiplier = 100f;
@@ -29,7 +28,7 @@ public class OSCScript : MonoBehaviour
             }
         }
 
-        oscReceiver.Bind("/slider_X", TraiterX);
+        oscReceiver.Bind("/slider_lever1", TraiterX);
     }
 
     void LateUpdate()

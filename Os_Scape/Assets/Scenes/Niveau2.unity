@@ -1065,6 +1065,139 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.0000024, y: 4.9999995, z: 1.9031229}
   m_Center: {x: -2.5000012, y: 2.4999998, z: 0.95156145}
+--- !u!1 &48412564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 48412568}
+  - component: {fileID: 48412567}
+  - component: {fileID: 48412566}
+  - component: {fileID: 48412565}
+  - component: {fileID: 48412570}
+  - component: {fileID: 48412569}
+  m_Layer: 0
+  m_Name: OSC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &48412565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48412564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5993ede56c906f8449f918782babef75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscReceiver: {fileID: 48412567}
+  oscTransmitter: {fileID: 48412566}
+  handleObject: {fileID: 0}
+  valueX: 0
+  motorForce: 50
+  motorSpeedMultiplier: 100
+--- !u!114 &48412566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48412564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464088183d2a1484ab8fb64e356c9f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConnect: 1
+  _closeOnPause: 0
+  _mapBundle: {fileID: 0}
+  _workInEditor: 0
+  _localHostMode: 0
+  _localPortMode: 0
+  _localReceiver: {fileID: 0}
+  _localHost: 192.168.137.1
+  _localPort: 7000
+  _remoteHost: 127.0.0.1
+  _remotePort: 7000
+  _useBundle: 0
+--- !u!114 &48412567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48412564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbba286dc10e549b2bdec947ef8dbd3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoConnect: 1
+  _closeOnPause: 0
+  _mapBundle: {fileID: 0}
+  _workInEditor: 0
+  _localHostMode: 0
+  _localHost: 192.168.137.1
+  _localPort: 11000
+--- !u!4 &48412568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48412564}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.21, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &48412569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48412564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c4c8174baec1d4ca73de6e1f04caed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscReceiver: {fileID: 48412567}
+  oscTransmitter: {fileID: 48412566}
+  handleObject: {fileID: 0}
+  valueX: 0
+  motorForce: 50
+  motorSpeedMultiplier: 100
+--- !u!114 &48412570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48412564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad17f5aed7946a4ba3cd9f2b77a505e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscReceiver: {fileID: 48412567}
+  oscTransmitter: {fileID: 48412566}
+  handleObject: {fileID: 0}
+  valueX: 0
+  motorForce: 50
+  motorSpeedMultiplier: 100
 --- !u!1 &50180906
 GameObject:
   m_ObjectHideFlags: 0
@@ -8549,6 +8682,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 122110, guid: 50f315b818ee102489edc51e8657621c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 678375239}
+    - targetCorrespondingSourceObject: {fileID: 122110, guid: 50f315b818ee102489edc51e8657621c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678375249}
   m_SourcePrefab: {fileID: 100100000, guid: 50f315b818ee102489edc51e8657621c, type: 3}
 --- !u!4 &678375236 stripped
 Transform:
@@ -8953,6 +9089,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hinge: {fileID: 678375241}
   animPlatform: {fileID: 1174895638}
+--- !u!114 &678375249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678375237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5993ede56c906f8449f918782babef75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscReceiver: {fileID: 48412567}
+  oscTransmitter: {fileID: 48412566}
+  handleObject: {fileID: 678375237}
+  valueX: 0
+  motorForce: 50
+  motorSpeedMultiplier: 100
 --- !u!1001 &693886088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12120,6 +12274,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 122110, guid: 50f315b818ee102489edc51e8657621c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 988875729}
+    - targetCorrespondingSourceObject: {fileID: 122110, guid: 50f315b818ee102489edc51e8657621c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 988875740}
   m_SourcePrefab: {fileID: 100100000, guid: 50f315b818ee102489edc51e8657621c, type: 3}
 --- !u!4 &988875726 stripped
 Transform:
@@ -12524,6 +12681,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hinge: {fileID: 988875731}
   door: {fileID: 1785059111}
+--- !u!114 &988875740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988875727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5993ede56c906f8449f918782babef75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscReceiver: {fileID: 48412567}
+  oscTransmitter: {fileID: 48412566}
+  handleObject: {fileID: 988875727}
+  valueX: 0
+  motorForce: 50
+  motorSpeedMultiplier: 100
 --- !u!1 &991053294
 GameObject:
   m_ObjectHideFlags: 0
@@ -24266,3 +24441,4 @@ SceneRoots:
   - {fileID: 1681008656}
   - {fileID: 1580909512}
   - {fileID: 1407491681}
+  - {fileID: 48412568}

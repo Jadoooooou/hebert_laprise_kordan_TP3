@@ -3846,8 +3846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crate: {fileID: 1077419307}
-  animPlatform: {fileID: 1381376473}
+  crate: {fileID: 720976564}
+  animPlateform: {fileID: 613071516}
 --- !u!114 &412356214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3860,8 +3860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694ed0c47db93c143ae5d1a4c630dc6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crate: {fileID: 720976564}
-  animPlatform: {fileID: 613071516}
+  crate: {fileID: 1077419307}
+  animPlateform: {fileID: 1381376473}
 --- !u!1001 &440323828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6125,7 +6125,6 @@ GameObject:
   m_Component:
   - component: {fileID: 786753008}
   - component: {fileID: 786753009}
-  - component: {fileID: 786753010}
   - component: {fileID: 786753011}
   m_Layer: 0
   m_Name: Script
@@ -6164,19 +6163,6 @@ MonoBehaviour:
   hinge: {fileID: 1412185600}
   porteGauche: {fileID: 1926763009}
   porteDroite: {fileID: 1772415953}
---- !u!114 &786753010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786753006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4d1bae7b35950409125d105db4b1a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  count: 0
 --- !u!114 &786753011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12201,7 +12187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crate: {fileID: 720976564}
-  animPlatform: {fileID: 613071516}
+  animPlateform: {fileID: 613071516}
 --- !u!114 &1398037254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12215,7 +12201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crate: {fileID: 1077419307}
-  animPlatform: {fileID: 1381376473}
+  animPlateform: {fileID: 1381376473}
 --- !u!1001 &1412185591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15203,7 +15189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diamond: {fileID: 2085693542}
   FX: {fileID: 800055790}
-  Reussite: {fileID: 1034478135}
   delay: 5
   placementHeightThreshold: 0.5
 --- !u!65 &1883968052

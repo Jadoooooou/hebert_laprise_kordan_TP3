@@ -1,35 +1,39 @@
 using UnityEngine;
 
-public class CratePuzzle_TwoOutOfThree : MonoBehaviour
+public class DualStoneCratePuzzle : MonoBehaviour
 {
     public GameObject stone1;
     public GameObject stone2;
-    public GameObject stone3;
     public GameObject crate1;
     public GameObject crate2;
-    public GameObject door;
-    public float placementThreshold = 0.5f;
+    public Animator animPlateform;
+
+    public float placementThreshold = 0.5f; // How high stone needs to be above crate
+
+    private bool stone1OnCrate = false;
+    private bool stone2OnCrate = false;
 
     void Update()
     {
-        bool c1 = IsOnTop(stone1, crate1) || IsOnTop(stone2, crate1) || IsOnTop(stone3, crate1);
-        bool c2 = IsOnTop(stone1, crate2) || IsOnTop(stone2, crate2) || IsOnTop(stone3, crate2);
+        stone1OnCrate = IsOnTop(stone1, crate1);
+        stone2OnCrate = IsOnTop(stone2, crate2);
 
-        if (c1 && c2)
+        if (stone1OnCrate && stone2OnCrate)
         {
-            Debug.Log("Two crates are occupied. Opening door.");
-            door.SetActive(false);
+            animPlateform.SetTrigger("PlayAnim");
+            Debug.Log("Both stones are on crates. Playing animation.");
         }
         else
         {
-            Debug.Log("Not enough crates occupied. Closing door.");
-            door.SetActive(true);
+            animPlateform.SetTrigger("Idle");
+            Debug.Log("One or both stones are not on crates. Returning to idle.");
         }
     }
 
     bool IsOnTop(GameObject stone, GameObject crate)
     {
         float verticalOffset = stone.transform.position.y - crate.transform.position.y;
+
         float horizontalDistance = Vector3.Distance(
             new Vector3(stone.transform.position.x, 0, stone.transform.position.z),
             new Vector3(crate.transform.position.x, 0, crate.transform.position.z)

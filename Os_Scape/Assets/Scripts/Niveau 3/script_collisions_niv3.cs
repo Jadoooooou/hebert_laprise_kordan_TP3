@@ -1,29 +1,24 @@
 using UnityEngine;
 
-public class CratePuzzle_TwoOutOfThree : MonoBehaviour
+public class CratePuzzle_EitherStone : MonoBehaviour
 {
     public GameObject stone1;
     public GameObject stone2;
-    public GameObject stone3;
-    public GameObject crate1;
-    public GameObject crate2;
+    public GameObject crate;
     public GameObject door;
     public float placementThreshold = 0.5f;
 
     void Update()
     {
-        bool c1 = IsOnTop(stone1, crate1) || IsOnTop(stone2, crate1) || IsOnTop(stone3, crate1);
-        bool c2 = IsOnTop(stone1, crate2) || IsOnTop(stone2, crate2) || IsOnTop(stone3, crate2);
-
-        if (c1 && c2)
+        if (IsOnTop(stone1, crate) || IsOnTop(stone2, crate))
         {
-            Debug.Log("Two crates are occupied. Opening door.");
-            door.SetActive(false);
+            Debug.Log("At least one stone is on the crate. Opening door.");
+            door.SetActive(false); // Open door
         }
         else
         {
-            Debug.Log("Not enough crates occupied. Closing door.");
-            door.SetActive(true);
+            Debug.Log("No stone on the crate. Closing door.");
+            door.SetActive(true); // Close door
         }
     }
 

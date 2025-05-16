@@ -13,7 +13,7 @@ public class script_interactions_nv3 : MonoBehaviour
     public GameObject porte02;
     public GameObject porte03;
 
-    public float angleThreshold = 10f; // slightly lower for sensitivity
+    public float angleThreshold = 10f; 
 
     private float closeTimer = 0f;
     private bool shouldClosePorte1Droite = false;
@@ -25,7 +25,7 @@ public class script_interactions_nv3 : MonoBehaviour
         float angle3 = hinge3.angle;
         float angle4 = hinge4.angle;
 
-        // --- Porte1: open porte1Droite if hinge1 and hinge2 are different
+        //porte 1
         if (Mathf.Abs(angle1 - angle2) > angleThreshold)
         {
             SetDoorState(porte1Droite, true);
@@ -48,13 +48,13 @@ public class script_interactions_nv3 : MonoBehaviour
             }
         }
 
-        // --- Porte2
+        //porte 2
         if (angle2 > 30f)
             SetDoorState(porte2, true);
         else if (angle2 < -30f)
             SetDoorState(porte2, false);
 
-        // --- Porte3
+        //porte 3
         if (angle3 < -30f)
         {
             SetDoorState(porte3Gauche, true);
@@ -66,7 +66,7 @@ public class script_interactions_nv3 : MonoBehaviour
             SetDoorState(porte3Droite, true);
         }
 
-        // --- Porte4: hinge3 vs hinge4 logic
+        //porte 4
         float diff34 = Mathf.Abs(angle3 - angle4);
         if (diff34 > angleThreshold)
         {

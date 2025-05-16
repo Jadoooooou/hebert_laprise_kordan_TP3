@@ -17,12 +17,10 @@ public class CratePuzzle_TwoOutOfThree : MonoBehaviour
 
         if (c1 && c2)
         {
-            Debug.Log("Two crates are occupied. Opening door.");
             door.SetActive(false);
         }
         else
         {
-            Debug.Log("Not enough crates occupied. Closing door.");
             door.SetActive(true);
         }
     }

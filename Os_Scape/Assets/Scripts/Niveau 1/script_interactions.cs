@@ -11,11 +11,9 @@ public class Script_levier_plateform : MonoBehaviour
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
-        float angle = hinge.angle;  // Live angle in degrees
+        float angle = hinge.angle; 
 
         if (angle < -30f)
         {

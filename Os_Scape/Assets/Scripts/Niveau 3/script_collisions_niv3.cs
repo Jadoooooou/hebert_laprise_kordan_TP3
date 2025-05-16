@@ -12,13 +12,11 @@ public class CratePuzzle_EitherStone : MonoBehaviour
     {
         if (IsOnTop(stone1, crate) || IsOnTop(stone2, crate))
         {
-            Debug.Log("At least one stone is on the crate. Opening door.");
-            door.SetActive(false); // Open door
+            door.SetActive(false);
         }
         else
         {
-            Debug.Log("No stone on the crate. Closing door.");
-            door.SetActive(true); // Close door
+            door.SetActive(true);
         }
     }
 

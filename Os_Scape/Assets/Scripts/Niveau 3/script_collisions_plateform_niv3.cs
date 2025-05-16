@@ -8,7 +8,7 @@ public class DualStoneCratePuzzle : MonoBehaviour
     public GameObject crate2;
     public Animator animPlateform;
 
-    public float placementThreshold = 0.5f; // How high stone needs to be above crate
+    public float placementThreshold = 0.5f;
 
     private bool stone1OnCrate = false;
     private bool stone2OnCrate = false;

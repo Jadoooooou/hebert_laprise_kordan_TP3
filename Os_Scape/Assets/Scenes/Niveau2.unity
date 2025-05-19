@@ -3282,7 +3282,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 754843911}
   m_PlaneDistance: 5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -10003,6 +10003,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 4.999999, z: 1.9031218}
   m_Center: {x: -2.5, y: 2.4999995, z: 0.9515609}
+--- !u!20 &754843911 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3317738516338080888, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
+  m_PrefabInstance: {fileID: 1979696557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &768051315
 GameObject:
   m_ObjectHideFlags: 0

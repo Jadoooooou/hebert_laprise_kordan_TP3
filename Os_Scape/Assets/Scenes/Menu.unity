@@ -4700,7 +4700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 977112980093118977, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_LineLength
-      value: 25
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 977112980093118977, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_ValidColorGradient.key0.b
@@ -4720,7 +4720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1024908010063967882, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_LineLength
-      value: 25
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1024908010063967882, guid: d2556a9208cede44187aa86d9aea9cdc, type: 3}
       propertyPath: m_ValidColorGradient.key0.b

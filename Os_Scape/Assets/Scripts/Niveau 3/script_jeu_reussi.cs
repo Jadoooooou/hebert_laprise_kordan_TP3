@@ -7,7 +7,7 @@ public class DiamondPortalTrigger3 : MonoBehaviour
     public GameObject diamond;
     public GameObject FX;
     public GameObject Reussite;
-    public float sceneLoadDelay = 15f;
+    public float sceneLoadDelay = 5f;
     public float placementHeightThreshold = 0.5f;
 
     void OnTriggerEnter(Collider other)

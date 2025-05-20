@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -42,6 +41,7 @@ public class Joueur : MonoBehaviour
             if (decompteVies == 0)
             {
                 defaite.SetActive(true);
+                StartCoroutine(ChargerMenuApresDefaite());
             }
             else
             {
@@ -56,5 +56,10 @@ public class Joueur : MonoBehaviour
         yield return new WaitForSeconds(2f);
         isInvincible = false;
     }
-}
 
+    IEnumerator ChargerMenuApresDefaite()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Menu");
+    }
+}

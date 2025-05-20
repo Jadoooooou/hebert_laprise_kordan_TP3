@@ -6209,6 +6209,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 736364869}
   m_SourcePrefab: {fileID: 100100000, guid: 0fe037ec6aebc43ee8a96a71041c7453, type: 3}
+--- !u!1 &720304131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5836223791797693466, guid: 0fe037ec6aebc43ee8a96a71041c7453, type: 3}
+  m_PrefabInstance: {fileID: 720304130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &720976564 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 196456, guid: cd2a7aebdad580e449538f9662d6e861, type: 3}
@@ -7965,17 +7970,17 @@ RectTransform:
   m_GameObject: {fileID: 923779589}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 0.6340956, y: 1.009793, z: 0.6262672}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.29, y: 0.46182305, z: 0.28641972}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1552869939}
   - {fileID: 1829292402}
   - {fileID: 397207007}
   m_Father: {fileID: 1199395632}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -276, y: -36}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1036.53, y: -354}
   m_SizeDelta: {x: 1469, y: 519}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &923779591
@@ -15338,7 +15343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73bcc9bed5a381d418248dd7191d615c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diamond: {fileID: 0}
+  diamond: {fileID: 720304131}
   FX: {fileID: 800055790}
   delay: 5
   placementHeightThreshold: 0.5

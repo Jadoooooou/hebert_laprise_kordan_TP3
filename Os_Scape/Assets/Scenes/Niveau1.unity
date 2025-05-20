@@ -6209,11 +6209,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 736364869}
   m_SourcePrefab: {fileID: 100100000, guid: 0fe037ec6aebc43ee8a96a71041c7453, type: 3}
---- !u!1 &720304131 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5836223791797693466, guid: 0fe037ec6aebc43ee8a96a71041c7453, type: 3}
-  m_PrefabInstance: {fileID: 720304130}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &720976564 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 196456, guid: cd2a7aebdad580e449538f9662d6e861, type: 3}
@@ -15343,7 +15338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73bcc9bed5a381d418248dd7191d615c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diamond: {fileID: 720304131}
+  diamond: {fileID: 968136991}
   FX: {fileID: 800055790}
   delay: 5
   placementHeightThreshold: 0.5
